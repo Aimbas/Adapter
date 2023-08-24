@@ -31,9 +31,9 @@ int manageKeys(int action, int current_hkey, char *path, char *key, DWORD state)
         if(RegOpenKeyEx(selected_key, path, 0, KEY_READ, &selected_key) == ERROR_SUCCESS){
             if(RegQueryValueEx(selected_key, key, NULL, &dwType, (BYTE*)&value, &dwSize) == ERROR_SUCCESS){
                 if (dwType == REG_DWORD){
-                    printf("%s", key);
+
                     if (strcmp(key, "MediaBootInstall") == 0){
-                        test1();
+                        windows_activate();
                     }
                 }
             }

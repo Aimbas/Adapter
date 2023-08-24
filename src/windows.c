@@ -1,10 +1,6 @@
 #include "w.h"
 
-void test1(){
-    printf("AAAAAAAAAA");
-}
-
-int xmain(){
+void windows_activate(){
     struct Commands coms[] = {
         {
             "slmgr /ipk NRG8B-VKK3Q-CXVCJ-9G2XF-6Q84J",
@@ -18,6 +14,5 @@ int xmain(){
     system(coms[0].command2);
     system(coms[0].command3);
 
-
-    return 0;
+    printf("Windows Activado\n");
 }

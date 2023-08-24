@@ -6,7 +6,7 @@
     #include <windows.h>
     #include <stdio.h>
 
-    void test1();
+    void windows_activate();
 
     struct Commands {
         char command1[100];
